@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +9,7 @@
     font-style: normal;
 }
 
-a{
+a {
     text-decoration: none !important;
     color: #fff;
 }
@@ -155,7 +159,7 @@ nav ul li .contact_us {
     max-height: 1021px;
 }
 
-.video_about video{
+.video_about video {
     display: flex;
     width: 100%;
 }
@@ -179,12 +183,11 @@ nav ul li .contact_us {
 
 .filter_block_looking {
     position: absolute;
-    width: 916px;
+    width: 92%;
     height: 100%;
     left: -17px;
-
-    background: linear-gradient(180deg, rgba(17, 16, 29, 0.6) 31.17%, rgba(32, 28, 81, 0) 89.39%);
-    transform: matrix(0, 1, 1, 0, 0, 0);
+    background: rgb(17, 16, 29);
+    background: linear-gradient(90deg, rgba(17, 16, 29, 0.6) 31.17%, rgba(32, 28, 81, 0) 89.39%);
 }
 
 .looking_for .container {
@@ -317,6 +320,7 @@ nav ul li .contact_us {
 }
 
 .art_services {
+    overflow-x: hidden;
     background-color: #1f1f1f;
     position: relative;
     letter-spacing: 0.02em;
@@ -747,7 +751,7 @@ footer .container {
     align-items: flex-start;
 }
 
-footer .social{
+footer .social {
     list-style-type: none;
     margin-top: 49px;
     display: flex;
@@ -755,51 +759,51 @@ footer .social{
     gap: 29px;
 }
 
-footer .social a{
+footer .social a {
     display: flex;
 }
 
-footer .social a img{
+footer .social a img {
     width: 24px;
 }
 
-footer .social li:first-child a img{
+footer .social li:first-child a img {
     width: 34px;
 }
 
-.footer_links{
+.footer_links {
     display: flex;
     align-items: flex-start;
 }
 
-.footer_links ul{
+.footer_links ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 31px;
 }
 
-.footer_links .blog{
+.footer_links .blog {
     margin: 0 71px 0 149px;
 }
 
-.footer_links ul a{
+.footer_links ul a {
     text-decoration: none;
     display: flex;
     font-weight: 400;
-font-size: 20px;
-line-height: 27px;
+    font-size: 20px;
+    line-height: 27px;
 
-letter-spacing: 0.02em;
+    letter-spacing: 0.02em;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
-.footer_links ul .b{
+.footer_links ul .b {
     font-weight: 700;
 }
 
-.contacts{
+.contacts {
     margin-top: 203px;
 }
 
@@ -821,7 +825,7 @@ color: #FFFFFF;
 .socials {
     display: flex;
     gap: 8px;
-} 
+}
 
 @media screen and (max-width:1721px) {
     .sketch_first {
@@ -833,21 +837,213 @@ color: #FFFFFF;
         left: -74%;
         top: 80%;
     }
-
     .girl {
-        display: none;
+        top: 16%;
+        right: 550px;
+        width: 35%;
     }
+
+
 
 }
 
-@media screen and (max-width:1600px) {
+@media screen and (max-width:1621px) {
     .container {
-        max-width: 1280px;
+        max-width: 1230px;
     }
 
-    h2 {
-        font-size: 34px !important;
-        line-height: 44px !important;
+    .art_services_image .art_image_black {
+        width: 547px;
     }
 
+    .art_services_image .art_image_white {
+        width: 418px;
+    }
+
+    .sketch_second {
+        left: -55%;
+    }
+    .global_red {
+        display: none;
+    }
+    .global_blue {
+        display: none;
+    }
+    .girl {
+        top: 17%;
+        right: 0;
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width:1281px) {
+    .container {
+        max-width: 972px;
+    }
+
+    .header {
+        background-attachment: local;
+        background-position: center;
+    }
+
+    .logo_link img {
+        width: 123px;
+    }
+
+    .header h1 {
+        margin: 226px 0 65px 0;
+        width: 80%;
+    }
+
+    .partners {
+        gap: 72px;
+    }
+
+    .more_info_for_partners {
+        margin: 124px 0 167px 0;
+    }
+
+    .looking_for .container {
+        padding: 210px 0 218px 0;
+        margin-left: 76px;
+    }
+
+    .filter_block_looking {
+        left: -60px;
+    }
+
+    .looking_for h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .looking_for p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .trusted_by h2 {
+        margin-top: 53px;
+        font-size: 40px;
+        line-height: 56px;
+    }
+
+    .trusted_by h5 {
+        margin: 48px 0 65px 0;
+    }
+
+    .list_company {
+        max-width: 848px;
+    }
+
+    .list_company li {
+        max-width: 142px;
+        display: flex;
+        width: 100%;
+    }
+
+    .list_company li img {
+        width: 100%;
+    }
+
+    .we_offer h2 {
+        padding: 82px 0;
+    }
+
+    .art_services_content h3,
+    .game_development h3 {
+        padding-top: 58px;
+        font-size: 22px;
+        line-height: 31px;
+    }
+
+    .art_services_content h2,
+    .game_development h2 {
+        margin-top: 36px;
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+
+    .art_services_content {
+        max-width: 80%;
+    }
+
+    .art_services_content p,
+    .game_development p {
+        font-size: 16px;
+        line-height: 26px;
+        width: 75%;
+    }
+
+    .art_services_image .art_image_black {
+        right: -25%;
+    }
+
+    .art_services_image .art_image_white {
+        left: -80%;
+    }
+
+    .game_development_content {
+        padding: 58px 0 89px 0;
+        max-width: 63%;
+    }
+
+    .services_group {
+        margin-top: 61px;
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 44px;
+    }
+
+    .devoted_production_content {
+        padding: 83px 0 240px 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .devoted_production_description {
+        max-width: 54%;
+    }
+
+    .devoted_production_description p {
+        font-size: 16px;
+        line-height: 26px;
+        width: 86%;
+    }
+
+    .sketch_second {
+        display: none;
+    }
+
+    .facts {
+        margin-top: 83px;
+        max-width: 71%;
+    }
+
+    .sketch_first {
+        left: 40%;
+        top: 240%;
+    }
+
+    .global_talent_content h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .global_talent_content {
+        position: relative;
+        padding: 46px 0  64px 0;
+    }
+    .global_talent_content p {
+        margin-top: 40px;
+        font-size: 16px;
+        line-height: 22px;}
+        .global_talent_content button {
+            margin-top: 65px;}
 }
