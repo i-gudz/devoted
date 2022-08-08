@@ -150,10 +150,10 @@ nav ul li .contact_us {
     max-height: 1021px;
 }
 
-.video_about img {
-    width: 100%;
+.video_about video{
+    display: flex;
+    height: 100%;
 }
-
 
 .filter_block {
     position: absolute;
