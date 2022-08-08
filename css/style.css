@@ -157,7 +157,7 @@ nav ul li .contact_us {
 
 .video_about video{
     display: flex;
-    height: 100%;
+    width: 100%;
 }
 
 .filter_block {
