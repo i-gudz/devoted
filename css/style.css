@@ -745,7 +745,7 @@ footer {
 }
 
 footer .container {
-    padding: 124px 0 215px 119px;
+    padding: 124px 0 215px 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -837,6 +837,7 @@ footer .social li:first-child a img {
         left: -74%;
         top: 80%;
     }
+
     .girl {
         top: 16%;
         right: 550px;
@@ -863,12 +864,15 @@ footer .social li:first-child a img {
     .sketch_second {
         left: -55%;
     }
+
     .global_red {
         display: none;
     }
+
     .global_blue {
         display: none;
     }
+
     .girl {
         top: 17%;
         right: 0;
@@ -1038,12 +1042,39 @@ footer .social li:first-child a img {
 
     .global_talent_content {
         position: relative;
-        padding: 46px 0  64px 0;
+        padding: 46px 0 64px 0;
     }
+
     .global_talent_content p {
         margin-top: 40px;
         font-size: 16px;
-        line-height: 22px;}
-        .global_talent_content button {
-            margin-top: 65px;}
+        line-height: 22px;
+    }
+
+    .global_talent_content button {
+        margin-top: 65px;
+    }
+
+    footer .container {
+        padding: 50px 0;
+    }
+
+    .footer_links {
+        display: none;
+    }
+
+    footer .social {
+        margin-top: 0;
+    }
+
+    .contacts {
+        margin-top: 0;
+    }
+
+    .links_social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
 }
