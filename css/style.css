@@ -147,6 +147,7 @@ nav ul li .contact_us {
 
 .video_about {
     position: relative;
+    max-height: 1021px;
 }
 
 .video_about img {
@@ -729,16 +730,72 @@ transform: matrix(0, 1, 1, 0, 0, 0); */
 }
 
 footer {
-    background-color: #2B2430;
+    background-color: #121031;
     position: relative;
     z-index: 2;
 }
 
 footer .container {
-    padding: 86px 0;
+    padding: 124px 0 215px 119px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer .social{
+    list-style-type: none;
+    margin-top: 49px;
+    display: flex;
     align-items: center;
+    gap: 29px;
+}
+
+footer .social a{
+    display: flex;
+}
+
+footer .social a img{
+    width: 24px;
+}
+
+footer .social li:first-child a img{
+    width: 34px;
+}
+
+.footer_links{
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer_links ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.footer_links .blog{
+    margin: 0 71px 0 149px;
+}
+
+.footer_links ul a{
+    text-decoration: none;
+    display: flex;
+    font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+}
+
+.footer_links ul .b{
+    font-weight: 700;
+}
+
+.contacts{
+    margin-top: 203px;
 }
 
 .contacts p {
@@ -746,7 +803,7 @@ footer .container {
     font-size: 16px;
     line-height: 22px;
 
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.02em;
 
     color: #9F9F9F;
@@ -759,7 +816,7 @@ footer .container {
 .socials {
     display: flex;
     gap: 8px;
-}
+} 
 
 @media screen and (max-width:1721px) {
     .sketch_first {
