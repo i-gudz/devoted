@@ -20,14 +20,19 @@
         <header>
             <div class="container"> <a href="#" class="logo_link"> <img src="image/logo.svg" alt="logo"> </a>
                 <nav>
-                    <ul>
-                        <li><a href="#">WHO WE ARE</a></li>
-                        <li><a href="#">OUR SOLUTIONS</a></li>
-                        <li><a href="#">PORTFOLIO</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">ARTSTATION</a></li>
+                    <ul class="navigation">
+                        <li><a class="menu_item" href="#">WHO WE ARE</a></li>
+                        <li><a class="menu_item" href="#">OUR SOLUTIONS</a></li>
+                        <li><a class="menu_item" href="#">PORTFOLIO</a></li>
+                        <li><a class="menu_item" href="#">BLOG</a></li>
+                        <li><a class="menu_item" href="#">ARTSTATION</a></li>
                     </ul>
-                    <div class="burger"> <span></span> <span></span> <span></span> </div><a class="contact_us"
+                    <div class="burger"> 
+                        <span></span> 
+                        <span></span> 
+                        <span></span> 
+                    </div>
+                    <a class="contact_us"
                         href="https://www.artstation.com/devoted-studios">CONTACT US</a>
                 </nav>
             </div>
@@ -217,12 +222,12 @@
                     <h2>Devoted Production Management</h2>
                     <p>We take pride in creating the conditions for talent to thrive so they can focus on what they do
                         best, enabling devoted turnkey services that free you to pursue your vision - without the
-                        overhead.</p><button>Let Us Carry to Success!</button> <img class="sketch_first"
-                        src="image/devoted-studios-sketch1.svg" alt=""> <img class="sketch_second"
-                        src="image/devoted-studios-sketch2.svg" alt="">
+                        overhead.</p><button>Let Us Carry to Success!</button> 
                 </div>
             </div>
         </div>
+        <img class="sketch_first" src="image/devoted-studios-sketch1.svg" alt=""> 
+        <img class="sketch_second" src="image/devoted-studios-sketch2.svg" alt="">
     </section>
     
     <section class="reviews">
@@ -363,6 +368,14 @@
                 disableOnInteraction: false,
             }
         });
+
+        let btnBurger = document.querySelector('.burger')
+        let navigationList = document.querySelector('.navigation')
+        
+        btnBurger.onclick = function() {
+            navigationList.classList.toggle('navigation_active')
+            btnBurger.classList.toggle('burger_active');
+};
     </script>
 </body>
 

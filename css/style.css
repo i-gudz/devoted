@@ -344,7 +344,8 @@ nav .contact_us {
     color: #FFFFFF;
 }
 
-.game_contact_us, .services_group_mobile{
+.game_contact_us,
+.services_group_mobile {
     display: none;
 }
 
@@ -353,7 +354,7 @@ nav .contact_us {
     /*  */
 }
 
-.art_contact_us{
+.art_contact_us {
     display: none;
 }
 
@@ -481,6 +482,10 @@ transform: matrix(0, 1, 1, 0, 0, 0); */
     gap: 52px;
 }
 
+.devoted_production{
+    position: relative;
+}
+
 .devoted_production_content {
     padding: 161px 0 141px 0;
     display: flex;
@@ -578,13 +583,15 @@ transform: matrix(0, 1, 1, 0, 0, 0); */
 }
 
 .sketch_first {
-    left: -34%;
-    top: 54%;
+    position: absolute;
+    right: 88px;
+    bottom: -178px
 }
 
 .sketch_second {
-    left: -95%;
-    top: 60%;
+    position: absolute;
+    right: 414px;
+    bottom: -219px;
 }
 
 .reviews {
@@ -852,17 +859,13 @@ footer .social li:first-child a img {
     display: none;
 }
 
-@media screen and (max-width:1721px) {
-    .sketch_first {
-        width: 139%;
-        top: 82%;
-    }
+@media screen and (max-width:1830px) {
+.sketch_second, .sketch_first {
+    height: 75%;}
+}
 
-    .sketch_second {
-        width: 100%;
-        left: -74%;
-        top: 120%;
-    }
+@media screen and (max-width:1721px) {
+    
 
     .girl {
         top: 16%;
@@ -1046,6 +1049,9 @@ footer .social li:first-child a img {
         line-height: 26px;
         width: 86%;
     }
+    .sketch_first {
+        height: 42%;
+    }
 
     .sketch_second {
         display: none;
@@ -1056,10 +1062,7 @@ footer .social li:first-child a img {
         max-width: 71%;
     }
 
-    .sketch_first {
-        left: 40%;
-        top: 240%;
-    }
+    
 
     .global_talent_content h2 {
         font-size: 40px;
@@ -1147,9 +1150,9 @@ footer .social li:first-child a img {
         max-width: 55%;
     }
 
+    
     .sketch_first {
-        left: 49%;
-        top: 256%;
+        height: 29%;
     }
     .art_services_image .art_image_white {
         display: none;
@@ -1187,6 +1190,12 @@ footer .social li:first-child a img {
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
+        transition: .3s;
+    }
+
+    .burger:hover {
+        cursor: pointer;
+        transition: .3s;
     }
 
     .burger span {
@@ -1194,14 +1203,17 @@ footer .social li:first-child a img {
         height: 3px;
         background-color: #fff;
         border-radius: 15px;
+        transition: .3s;
     }
 
     .burger span:nth-child(2) {
         width: 22.5px;
+        transition: .3s;
     }
 
     .burger span:last-child {
         width: 9px;
+        transition: .3s;
     }
 
     .video_about {
@@ -1316,35 +1328,42 @@ footer .social li:first-child a img {
         font-size: 32px;
         line-height: 45px;
     }
+
     .art_services .container {
         flex-direction: column;
     }
+
     .art_services_content {
         max-width: 100%;
     }
-    .art_services_content p, .game_development p {
+
+    .art_services_content p,
+    .game_development p {
         font-size: 12px;
         line-height: 19px;
         width: 87%;
     }
-    .art_services_content p:last-child{
+
+    .art_services_content p:last-child {
         display: none;
     }
 
-    .game_development .last_p_game{
+    .game_development .last_p_game {
         display: none;
     }
 
-    .services_group{
+    .services_group {
         display: none;
     }
-    .services_group_mobile{
+
+    .services_group_mobile {
         display: flex;
         gap: 15px;
         margin-top: 36px;
     }
 
-    .art_contact_us, .game_contact_us{
+    .art_contact_us,
+    .game_contact_us {
         display: block;
         width: max-content;
         text-decoration: none;
@@ -1361,18 +1380,22 @@ footer .social li:first-child a img {
 
     .game_development_content {
         padding: 0 0 53px 0;
-    max-width: 100%;}
-    .game_contact_us{
+        max-width: 100%;
+    }
+
+    .game_contact_us {
         margin: 36px 0 0 0;
     }
 
-    .art_services_content h3, .game_development h3 {
+    .art_services_content h3,
+    .game_development h3 {
         padding-top: 52px;
         font-size: 16px;
         line-height: 22px;
     }
 
-    .art_services_content h2, .game_development h2 {
+    .art_services_content h2,
+    .game_development h2 {
         margin-top: 18px;
         font-size: 32px;
         line-height: 38px;
@@ -1389,7 +1412,8 @@ footer .social li:first-child a img {
         left: 0;
         z-index: 1;
     }
-    .filter_block_art_services{
+
+    .filter_block_art_services {
         display: none;
     }
 
@@ -1416,6 +1440,19 @@ footer .social li:first-child a img {
         max-width: 100%;
     }
 
+    .sketch_first {
+        height: 280px;
+        right: 46px;
+        bottom: -85px;
+    }
+
+    .sketch_second {
+        display: block;
+        height: 280px;
+        right: 170px;
+        left: auto;
+        bottom: -100px;}
+
     .facts {
         gap: 40px;
         margin-top: 60px;
@@ -1437,21 +1474,7 @@ footer .social li:first-child a img {
         line-height: 17px;
     }
 
-    .sketch_first {
-        left: 37%;
-        bottom: 0%;
-        top: 266%;
-        width: 60%;
-    }
-
-    .sketch_second {
-        display: block;
-        left: 13%;
-        bottom: 0;
-        top: 280%;
-        width: 57%;
-    }
-
+    
 
 
 
@@ -1554,45 +1577,70 @@ footer .social li:first-child a img {
         padding: 45px 0;
     }
 
+    nav ul {
+        display: flex;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-end;
+        background: rgba(31, 31, 31, 0.56);
+        backdrop-filter: blur(16px);
+        padding-bottom: 30px;
+        transform: translateX(100%);
+        transition: .3s;
+    }
+
+    nav .navigation_active{
+        transform: translateX(0);
+        transition: .3s;
+    }
+    nav ul li a {
+        padding: 15px;
+    }
+
+
 
 }
 
-@media screen and (max-width: 703px) {
-
-
-    .sketch_first {
-        left: 37%;
-        bottom: 0%;
-        top: 266%;
-        width: auto;
-        height: 262px;
-    }
-
-    .sketch_second {
-        display: block;
-        left: 13%;
-        bottom: 0;
-        top: 268%;
-        width: auto;
-        height: 270px;
-    }
+.burger_active{
+    position: relative;
+    transition: .3s;
 }
+
+.burger_active span:first-child {
+    transform: rotate(45deg);
+    transition: .3s;
+}
+
+.burger_active span:nth-child(2) {
+    width: 36px;
+    transform: rotate(-45deg);
+    transition: .3s;
+}
+
+.burger_active span:last-child {
+    display: none;
+    transition: .3s;
+}
+
+.burger_active span {
+    position: absolute;
+    top: 14px;
+    transition: .3s;
+}
+
+
 
 
 @media screen and (max-width: 603px) {
-.art_services_image .art_image_black {
-    left: 55%;
-    width: 365px;
-}.art_services_image .art_image_white {
-    left: -22%;}}
-
-@media screen and (max-width: 503px) {
-    .sketch_first {
-        left: 19%;
-        top: 285%;
+    .art_services_image .art_image_black {
+        left: 55%;
+        width: 365px;
     }
-    .sketch_second {
-        left: -11%;
-        top: 285%;}
 
+    .art_services_image .art_image_white {
+        left: -22%;
+    }
 }
+
