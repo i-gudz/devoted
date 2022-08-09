@@ -28,6 +28,7 @@ header {
     height: 80px;
     background: rgba(31, 31, 31, 0.56);
     backdrop-filter: blur(16px);
+    transition: .5s;
 
 }
 
@@ -65,6 +66,13 @@ nav .contact_us {
     background: #7761FF;
     border-radius: 100px;
     padding: 13px 24px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 114%;
+    /* identical to box height, or 14px */
+
+    letter-spacing: 0.02em;
+    transition: .5s;
 }
 
 .header {
@@ -482,7 +490,7 @@ transform: matrix(0, 1, 1, 0, 0, 0); */
     gap: 52px;
 }
 
-.devoted_production{
+.devoted_production {
     position: relative;
 }
 
@@ -827,7 +835,7 @@ footer .social li:first-child a img {
     color: #FFFFFF;
 }
 
-.footer_links ul .b {
+.b {
     font-weight: 700;
 }
 
@@ -860,12 +868,15 @@ footer .social li:first-child a img {
 }
 
 @media screen and (max-width:1830px) {
-.sketch_second, .sketch_first {
-    height: 75%;}
+
+    .sketch_second,
+    .sketch_first {
+        height: 75%;
+    }
 }
 
 @media screen and (max-width:1721px) {
-    
+
 
     .girl {
         top: 16%;
@@ -1049,6 +1060,7 @@ footer .social li:first-child a img {
         line-height: 26px;
         width: 86%;
     }
+
     .sketch_first {
         height: 42%;
     }
@@ -1062,7 +1074,7 @@ footer .social li:first-child a img {
         max-width: 71%;
     }
 
-    
+
 
     .global_talent_content h2 {
         font-size: 40px;
@@ -1150,10 +1162,11 @@ footer .social li:first-child a img {
         max-width: 55%;
     }
 
-    
+
     .sketch_first {
         height: 29%;
     }
+
     .art_services_image .art_image_white {
         display: none;
     }
@@ -1164,6 +1177,8 @@ footer .social li:first-child a img {
         top: 24%;
     }
 }
+
+
 
 @media screen and (max-width:768px) {
     .container {
@@ -1451,7 +1466,8 @@ footer .social li:first-child a img {
         height: 280px;
         right: 170px;
         left: auto;
-        bottom: -100px;}
+        bottom: -100px;
+    }
 
     .facts {
         gap: 40px;
@@ -1474,7 +1490,7 @@ footer .social li:first-child a img {
         line-height: 17px;
     }
 
-    
+
 
 
 
@@ -1578,32 +1594,76 @@ footer .social li:first-child a img {
     }
 
     nav ul {
-        display: flex;
+        display: none
+    }
+
+    nav {
+        position: relative;
+        width: 100%;
+    }
+
+    .opacity_null{
+        opacity: 0;
+        transition: .5s;
+    }
+
+.update_color{
+    background: rgba(18, 16, 49, 0.9);
+    backdrop-filter: blur(10px); 
+}
+    .burger_menu {
         position: absolute;
         top: 80px;
-        right: 0;
-        flex-direction: column;
-        align-items: flex-end;
-        background: rgba(31, 31, 31, 0.56);
-        backdrop-filter: blur(16px);
-        padding-bottom: 30px;
-        transform: translateX(100%);
-        transition: .3s;
+        left: 0;
+        width: 100vw;
+        text-align: center;
+        font-size: 22px;
+        line-height: 252%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        background: rgba(18, 16, 49, 0.9);
+        backdrop-filter: blur(10px);
+        padding: 0 0 30px 0;
+        transform: translateY(-111%);
+        transition: .7s;
     }
 
-    nav .navigation_active{
-        transform: translateX(0);
-        transition: .3s;
-    }
-    nav ul li a {
-        padding: 15px;
+    .burger_menu_active{
+        transform: translateY(0);
+        transition: .7s; 
     }
 
+    .burger_menu .contact_us {
+        background: #7761FF;
+        border-radius: 100px;
+        width: 130px;
+        height: 40px;
+        margin: 0 auto;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 114%;
+        /* identical to box height, or 14px */
 
+        letter-spacing: 0.02em;
 
+        color: #FFFFFF;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burger_menu a {
+        display: block;
+    }
 }
 
-.burger_active{
+
+
+
+
+
+.burger_active {
     position: relative;
     transition: .3s;
 }
@@ -1643,4 +1703,3 @@ footer .social li:first-child a img {
         left: -22%;
     }
 }
-

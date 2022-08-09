@@ -32,9 +32,25 @@
                         <span></span> 
                         <span></span> 
                     </div>
-                    <a class="contact_us"
+                    <a class="contact_us main_contact_us"
                         href="https://www.artstation.com/devoted-studios">CONTACT US</a>
                 </nav>
+                <div class="burger_menu">
+                    <a class="contact_us"
+                        href="https://www.artstation.com/devoted-studios">CONTACT US</a>
+                    <a class="b" href="#">Who we are</a>
+                    <a class="b" href="#">Our Solutions</a>
+                    <a href="#">NFT & Metaverse Games</a>
+                    <a href="#">Voxel Art Creation</a>
+                    <a href="#">Game Development</a>
+                    <a href="#">Porting</a>
+                    <a href="#">Unity Games</a>
+                    <a href="#">Unreal Engine Games</a>
+                    <a href="#">Art Services</a>
+                    <a class="b" href="#">Our Portfolio</a>
+                    <a class="b" href="#">Blog</a>
+                    <a class="b" href="#">Join Us!</a>
+                </div>
             </div>
         </header>
         <div class="container">
@@ -370,12 +386,18 @@
         });
 
         let btnBurger = document.querySelector('.burger')
-        let navigationList = document.querySelector('.navigation')
-        
+        let burger = document.querySelector('.burger_menu')
+        let btn_contact = document.querySelector('.main_contact_us')
+        let header = document.querySelector('header')
         btnBurger.onclick = function() {
-            navigationList.classList.toggle('navigation_active')
+            burger.classList.toggle('burger_menu_active')
             btnBurger.classList.toggle('burger_active');
-};
+            btn_contact.classList.toggle('opacity_null')
+            header.classList.toggle('update_color')
+        };
+
+        
+        
     </script>
 </body>
 
