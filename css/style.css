@@ -855,12 +855,13 @@ footer .social li:first-child a img {
 @media screen and (max-width:1721px) {
     .sketch_first {
         width: 139%;
+        top: 82%;
     }
 
     .sketch_second {
         width: 100%;
         left: -74%;
-        top: 80%;
+        top: 120%;
     }
 
     .girl {
@@ -1588,10 +1589,10 @@ footer .social li:first-child a img {
 @media screen and (max-width: 503px) {
     .sketch_first {
         left: 19%;
-        top: 290%;
+        top: 285%;
     }
     .sketch_second {
         left: -11%;
-        top: 292%;}
+        top: 285%;}
 
 }
